@@ -10,7 +10,10 @@ export default function RootLayout({
     return (
         <AppProvider>
             <html>
-                <head></head>
+                <head>
+                    {/* title */}
+                    <title>GM Trainer</title>
+                </head>
                 <body>
                     {children}
                 </body>

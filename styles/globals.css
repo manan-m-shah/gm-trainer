@@ -1,3 +1,33 @@
+.game-div {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(280, 100, 50);
+}
+
+.game-board {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    /* background-color: aqua; */
+    height: 100%;
+    width: 100%;
+}
+
+.game-controller {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(280, 100, 50);
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
