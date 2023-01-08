@@ -1,7 +1,12 @@
 import { State } from "../types/Context";
 
 const initialState: State = {
-    count: 0
+    player: 'Manan',
+    uid: '',
+    fen: null,
+    history: [],
+    status: '',
+    turn: '',
 }
 
 export default initialState

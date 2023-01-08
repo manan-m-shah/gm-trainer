@@ -1,9 +1,21 @@
+import { Chess, Move } from "chess.js"
+
 type State = {
-    count: number
+    player: string,
+    uid: string,
+    fen: string | null,
+    history: Move[],
+    status: string,
+    turn: string,
 }
 
+
 export enum ActionKind {
-    COUNT = "COUNT",
+    SET_UID = "SET_UID",
+    SET_FEN = "SET_FEN",
+    SET_STATUS = "SET_STATUS",
+    SET_TURN = "SET_TURN",
+    SET_HISTORY = "SET_HISTORY",
 }
 
 type Action = {
